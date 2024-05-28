@@ -2,19 +2,15 @@
 """Define the data models for the quiz application"""
 from bson import ObjectId
 
-class Quiz:
-    def __init__(self, title, description, questions, author):
-        self.title = title
-        self.description = description
-        self.questions = questions
-        self.author = author
+class User:
+    def __init__(self, username, email):
+        self.username = username
+        self.email = email
 
     def to_json(self):
         return {
-            "title": self.title,
-            "description": self.description,
-            "questions": self.questions,
-            "author": self.author
+            "username": self.username,
+            "email": self.email
         }
 
 class Question:
@@ -28,4 +24,19 @@ class Question:
             "question_text": self.question_text,
             "options": self.optpions,
             "correct_option": self.correct_option
+        }
+
+class Quiz:
+    def __init__(self, title, description, questions, author):
+        self.title = title
+        self.description = description
+        self.questions = questions
+        self.author = author
+
+    def to_json(self):
+        return {
+            "title": self.title,
+            "description": self.description,
+            "questions": self.questions,
+            "author": self.author
         }

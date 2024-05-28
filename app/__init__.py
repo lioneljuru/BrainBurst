@@ -16,6 +16,8 @@ def create_app():
     mongo.init_app(app)
 
     with app.app_context():
-        from app import routes
+        from app.routes import quiz_routes, user_routes
+        app.register_blueprint(quiz_routes.bp)
+        app.register_blueprint(user_routes.bp)
 
     return app
