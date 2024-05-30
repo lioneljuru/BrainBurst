@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+"""Populates the database of the app"""
 from app import create_app
 from app.services.quiz_service import create_quiz
 from app.services.user_service import create_user

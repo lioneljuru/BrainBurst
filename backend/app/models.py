@@ -37,6 +37,6 @@ class Quiz:
         return {
             "title": self.title,
             "description": self.description,
-            "questions": self.questions,
+            "questions": [q.to_json() for q in self.questions],
             "author": self.author
         }
