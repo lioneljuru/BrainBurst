@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Tests for the user routes"""
 import pytest
-from app import create_app
+from app.__init__ import create_app
 from flask import json
 
 @pytest.fixture
