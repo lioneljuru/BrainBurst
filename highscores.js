@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const highScoresList = document.getElementById("highScoresList");
-//const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 fetch('http://localhost:5000/users')
 	.then((res) => {
