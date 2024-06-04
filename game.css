@@ -45,14 +45,14 @@ body {
 }
 .btn{
   background-color: #007bff; /* Blue color */
-color: white; /* Text color */
-border: none;
-padding: 1rem 1rem; /* Increase padding for larger button */
-font-size: 1.2rem; /* Increase font size */
-cursor: pointer;
-border-radius: 0.2rem;
-transition: background-color 0.3s ease;
-text-decoration: none;
+  color: white; /* Text color */
+  border: none;
+  padding: 1rem 1rem; /* Increase padding for larger button */
+  font-size: 1.2rem; /* Increase font size */
+  cursor: pointer;
+  border-radius: 0.2rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 /* HUD */
 
